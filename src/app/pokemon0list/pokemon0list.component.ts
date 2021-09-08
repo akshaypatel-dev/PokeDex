@@ -9,7 +9,7 @@ import {DataStateService} from "../service/data-state.service";
 })
 export class Pokemon0listComponent {
   pokemonList$ = this.dataState.pokemonObservable$;
-  pokemonTyped = (input: any) => input as GetOnePokemonReturn;
+  pokemonTyped = (input: any) => input as GetOnePokemonReturn
   constructor(
     private dataState: DataStateService
   ) {

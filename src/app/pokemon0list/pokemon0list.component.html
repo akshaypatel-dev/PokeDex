@@ -1,3 +1,7 @@
+
+
+
+
 <div class="pokemon-grid">
   <div class="box"
        *ngFor="let pokemon of pokemonList$ | async"
@@ -9,8 +13,10 @@
     <p> <b>Type:- </b> {{pokemon.types[0].type.name}}</p>
     <p> <b>Health:- </b> {{pokemon.stats[0].base_stat}}</p>
     <p> <b>Power:- </b> {{pokemon.order}}</p>
-    <p> <b>Weight:- </b> {{pokemon.weight}}</p>
+    <p> <b>Weight:- </b> {{pokemon.weight | custompipe}}</p>
+      <p> <b>Height:- </b> {{pokemon.height | heightpipe}}</p>
+
     </ng-container>
   </div>
 </div>
-<pagination-controls></pagination-controls>
+

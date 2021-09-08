@@ -21,7 +21,7 @@
   max-width: 150px;
   margin: 0 auto;
 }
-pagination-controls{text-align: center}
+
 /* ---------------- for mobile view -----------
  */
 @media only screen and (max-width: 600px) {
