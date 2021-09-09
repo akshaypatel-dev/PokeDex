@@ -10,6 +10,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NetworkInterceptor} from "./network.interceptor";
 import {HeightpipePipe} from './heightpipe.pipe';
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
+import {BgcolorDirective} from './bgcolor.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
     HeaderComponent,
     Pokemon0listComponent,
     CustompipePipe,
-    HeightpipePipe
+    HeightpipePipe,
+    BgcolorDirective,
   ],
   imports: [
     BrowserModule, HttpClientModule, NgxPaginationModule,
