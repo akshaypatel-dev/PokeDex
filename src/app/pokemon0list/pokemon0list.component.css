@@ -1,22 +1,24 @@
-.pokemon-grid{
+.pokemon-grid {
   display: grid;
   grid-gap: 15px;
   padding: 20px;
   position: relative;
   top: 70px;
   z-index: -1000;
-  grid-template-columns:repeat(auto-fit,minmax(23%,1fr));
+  grid-template-columns:auto auto auto auto;
 }
-.pokemon-grid .box{
+
+.pokemon-grid .box {
   width: 100%;
   height: 350px;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
   color: rebeccapurple;
   text-align: center;
   display: grid;
-  text-transform:capitalize;
+  text-transform: capitalize;
 }
-.box img{
+
+.box img {
   display: block;
   max-width: 150px;
   margin: 0 auto;
@@ -25,11 +27,12 @@
 /* ---------------- for mobile view -----------
  */
 @media only screen and (max-width: 600px) {
- .pokemon-grid{
-   display: block;
- }
-  .pokemon-grid .box{
-    margin-bottom:30px;
+  .pokemon-grid {
+    display: block;
+  }
+
+  .pokemon-grid .box {
+    margin-bottom: 30px;
   }
 }
 

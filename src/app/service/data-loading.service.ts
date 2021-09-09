@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {BehaviorSubject} from "rxjs";
 import {validateAndRewriteCoreSymbol} from "@angular/compiler-cli/src/ngtsc/imports";
 
@@ -6,13 +6,17 @@ import {validateAndRewriteCoreSymbol} from "@angular/compiler-cli/src/ngtsc/impo
   providedIn: 'root'
 })
 export class DataLoadingService {
-  public loading:BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
+  public loading: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
   public readonly loading$ = this.loading.asObservable();
-  constructor() { }
-  show(){
+
+  constructor() {
+  }
+
+  show() {
     this.loading.next(true)
   }
-  hide(){
+
+  hide() {
     this.loading.next(false)
   }
 

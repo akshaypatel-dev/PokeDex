@@ -1,6 +1,5 @@
 <app-header></app-header>
-
-<mat-progress-bar style="z-index: -1000" mode="indeterminate" *ngIf="loader.loading| async"></mat-progress-bar>
-
 <app-pokemon0list></app-pokemon0list>
+<mat-spinner mode="indeterminate" *ngIf="loader.loading| async"></mat-spinner>
+
 
