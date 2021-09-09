@@ -1,6 +1,5 @@
 header {
-  background-color: black;
-  color: #F6CF28;
+  background-color: #4922A1;
   display: flex;
   position: fixed;
   width: 100%;
@@ -11,16 +10,19 @@ header {
 
 header a {
   text-transform: uppercase;
-  text-align: center;
-  font-size: xx-large;
-  padding-top: 30px;
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 40px;
   font-weight: bolder;
+  color: white;
 }
 
 header img {
   height: 80px;
-  padding: 10px;
   border-radius: 50%;
+  margin-top: 6px;
+  border: 4px solid #5D2EB1;
+
 }
 
 @media only screen and (max-width: 600px) {

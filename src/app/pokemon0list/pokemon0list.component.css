@@ -6,23 +6,56 @@
   top: 100px;
   z-index: -1000;
   grid-template-columns:auto auto auto auto;
-
+  /*
+  background-color: #5D2EB1;
+  */
 }
 
 .pokemon-grid .box {
   width: 100%;
-  height: 350px;
+  height: 60vh;
   box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
   color: white;
   text-align: center;
   display: grid;
-  text-transform: capitalize;
 }
 
-.box img {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto;
+.pokemon-header {
+  display: flex;
+  width: 85%;
+  border-radius: 10px;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+/*pokemon card details design*/
+.design-details {
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 40%;
+  margin: auto;
+  padding: 5px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.pokemon-header img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.pokemon-header h3 {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+
+
 }
 
 /* ---------------- for mobile view -----------
@@ -30,7 +63,6 @@
 @media only screen and (max-width: 600px) {
   .pokemon-grid {
     display: block;
-    background-color: #F6CF28
 
   }
 

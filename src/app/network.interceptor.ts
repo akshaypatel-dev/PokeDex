@@ -20,7 +20,7 @@ export class NetworkInterceptor implements HttpInterceptor {
     return next.handle(request).pipe(
       finalize(() => {
         this.loader.hide();
-        console.log('succefully data loaded')
+        console.log('Data Loaded Successfully')
       }))
 
   }
